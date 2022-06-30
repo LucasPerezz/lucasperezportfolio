@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --page-color: #19e6ba;
+    --items-color: #1a3ba0;
+    --secondary-color: #ff2190;
+    --font-color: black;
+    --background-color: #fff;
+    --font-color-secondary: rgb(53, 53, 53);
+}
+
+
+
+/* FRONT PAGE */
+.front-page--container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+    margin-top: 70px;
+    height: 90vh;
+}
+
+.font-page--image-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.font-page--image-container img {
+    width: 70%;
+}
+
+.front-page--title {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.front-page--title  .front-page--title-name{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: black;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    animation: typing 2s steps(17),
+    blink 1s infinite step-end alternate;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.front-page--title .front-page--title-name span {
+    color: var(--page-color);
+}
+
+.front-page--title-position {
+    font-size: 1.4rem;
+    margin: auto;
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/*  */
+
+/* ABOUT ME */
+
+.about-me--container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 288px;
+    max-width: 810px;
+    gap: 30px;
+    margin: 90px auto;
+    height: auto;
+}
+
+.about-me--container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--page-color);
+    text-align: center;
+}
+
+.about-me--container .about-me__picture  {
+    width: 60%;
+    min-width: 288px;
+    height: 50vh;
+    background-image: url('./assets/me.JPG');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.about-me--container .about-me__text {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    color: var(--font-color-secondary);
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills--container {
+    height: auto;
+    width: 90%;
+    min-width: 288px;
+    max-width: 810px;
+    margin: 90px auto;
+}
+
+.skills--container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--page-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skill--card__image  img {
+    width: 75px !important;
+    height: 75px;
+}
+
+
+.portfolio--container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 810px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.portfolio--container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--page-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card--container {
+    border-radius: 8px !important;
+    border: none !important;
+    background-color: rgb(252, 252, 252) !important;
+    padding: 10px 0px;
+}
+
+.card--button button {
+    border: none;
+    padding: 5px 30px;
+    border-radius: 6px;
+    background: var(--page-color);
+}
+
+.card--button button:hover {
+    background: var(--items-color);
+    transition: all 400ms ease;
+}
+
+.card--button button a {
+    color: var(--background-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--page-color);
+    height: auto;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    margin-top: 70px;
+}
+
+.footer--image {
+    width: 40%;
+    background-image: url("./assets/code-6127616_1280.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.footer--text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer--text ul li {
+    list-style: none;
+}
+
+.footer--text ul li a {
+    font-size: 1.2rem;
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .about-me--container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 170px auto;
+    }
+
+    .about-me--container h2 {
+        display: none;
+    }
+}
+
+

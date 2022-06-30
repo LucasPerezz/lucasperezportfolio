@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <main>
+        <section class="front-page--container" id="home">
+            <div class="front-page--title">
+                <p class="front-page--title-name">Hola, soy <span>Lucas Perez</span></p>
+                <p class="front-page--title-position">FrontEnd Developer</p>
+            </div>
+            <div class="font-page--image-container">
+                <img src="./assets/kisspng-computer-programming-technical-support-application-5c024917a1e809.9994898215436536556632.png"
+                    alt="">
+            </div>
+        </section>
+
+        <section class="about-me--container" id="about-me">
+            <h2>Sobre mi</h2>
+            <div class="about-me__picture">
+            </div>
+            <div class="about-me__text">
+                <p>Apasionado por la programacion. Resiliente, competitivo y constante. Mi objetivo es poner en practica
+                    todos los conocimientos adquiridos durante mi formacion academica y poder formar parte de un equipo
+                    de trabajo que me permita desarrollarme personal y profesionalmente.</p>
+            </div>
+        </section>
+
+        <section class="skills--container" id="skills">
+            <h2>Mis habilidades</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="swiper-wrapper"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        
+
+        <section class="portfolio--container" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper" id="swiper-wrapper-portfolio">
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer--image"></div>
+        <div class="footer--text">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">Sobre mi</a></li>
+                <li><a href="#skills">Mis habilidades</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+</html>
