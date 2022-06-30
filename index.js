@@ -1,6 +1,5 @@
-const swiperWrapper = document.getElementById('swiper-wrapper')
-const swiperWrapperPortfolio = document.getElementById('swiper-wrapper-portfolio')
-const languagesUsed = document.getElementById('languages-used')
+const swiperWrapper = document.getElementById('swiper-wrapper');
+const swiperWrapperPortfolio = document.getElementById('swiper-wrapper-portfolio');
 
 const skills = [{
         language: "HTML",
@@ -34,7 +33,7 @@ const skills = [{
         language: "C",
         image: "https://i.ibb.co/yskBYNz/5a36954d40bea2-0735336615135266052652.png"
     }
-]
+];
 
 const portfolio = [
     {
@@ -59,26 +58,68 @@ const portfolio = [
         ],
         url: "https://lucasperezz.github.io/batatacoin/",
         github: "https://github.com/LucasPerezz/batatacoin"
+    },
+    {
+        name: "PuntoPhone",
+        image: "https://i.ibb.co/c6PBS9j/Opera-Captura-de-pantalla-2022-05-08-010004-lucasperezz-github-io.png",
+        language: [
+            "Html",
+            "Css",
+            "JavaScript"
+        ],
+        url: "https://lucasperezz.github.io/puntoPhone/",
+        github: "https://github.com/LucasPerezz/puntoPhone"
+    },
+    {
+        name: "GameZone",
+        image: "https://i.ibb.co/z7WMP3q/Opera-Captura-de-pantalla-2022-05-08-005845-lucasperezz-github-io.png",
+        language: [
+            "Html",
+            "Css",
+        ],
+        url: "https://lucasperezz.github.io/Proyecto-coder/index.html",
+        github: "https://github.com/LucasPerezz/Proyecto-coder"
+    },
+    {
+        name: "MoneySave",
+        image: "https://i.ibb.co/3Td3sg6/Opera-Captura-de-pantalla-2022-06-30-021441-lucasperezz-github-io.png",
+        language: [
+            "Html",
+            "Css",
+            "JavaScript"
+        ],
+        url: "https://lucasperezz.github.io/controladorDeGastos/",
+        github: "https://github.com/LucasPerezz/controladorDeGastos"
+    },
+    {
+        name: "FlowerNails",
+        image: "https://i.ibb.co/cQ6z4bg/Opera-Captura-de-pantalla-2022-06-30-021743-lucasperezz-github-io.png",
+        language: [
+            "Html",
+            "Css"
+        ],
+        url: "https://lucasperezz.github.io/flowernails/",
+        github: "https://github.com/LucasPerezz/flowernails"
     }
-]
+];
 
 const sectionSkills = (skills) => {
     skills.forEach((skill) => {
-        const createSwiperSlide = document.createElement('div')
-        createSwiperSlide.className = "swiper-slide skill--card__image"
+        const createSwiperSlide = document.createElement('div');
+        createSwiperSlide.className = "swiper-slide skill--card__image";
 
-        createSwiperSlide.innerHTML = `<img src=${skill.image} alt=${skill.language}>`
+        createSwiperSlide.innerHTML = `<img src=${skill.image} alt=${skill.language}>`;
 
 
-        swiperWrapper.appendChild(createSwiperSlide)
+        swiperWrapper.appendChild(createSwiperSlide);
     })
 }
 
 const sectionPortfolio = () => {
     portfolio.forEach((proyect) => {
-        const createSwiperSlidePortfolio = document.createElement('div')
-        createSwiperSlidePortfolio.className = "swiper-slide"
-        createSwiperSlidePortfolio.innerHTML = `
+        const createSwiperSlidePortfolio = document.createElement('div');
+        createSwiperSlidePortfolio.className = "swiper-slide";
+        createSwiperSlidePortfolio.innerHTML = `;
         <div class="card mb-3 card--container">
         <img src=${proyect.image} class="card-img-top" alt=${proyect.name}>
         <div class="card-body">
@@ -90,7 +131,7 @@ const sectionPortfolio = () => {
           </div>
         </div>
       </div>
-        `
+        `;
 
         swiperWrapperPortfolio.appendChild(createSwiperSlidePortfolio);
     })
@@ -99,5 +140,5 @@ const sectionPortfolio = () => {
 
 
 
-sectionSkills(skills)
-sectionPortfolio(portfolio)
+sectionSkills(skills);
+sectionPortfolio(portfolio);

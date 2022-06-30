@@ -237,10 +237,27 @@ footer {
         justify-content: center;
         align-items: center;
         margin: 170px auto;
+        justify-content: space-around;
+        justify-content: center;
+        gap: 40px;
     }
 
     .about-me--container h2 {
         display: none;
+    }
+
+    .about-me--container .about-me__text {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        font-family: 'roboto', sans-serif;
+        font-weight: 400;
+        
+    }
+
+    .about-me--container .about-me__picture  {
+        width: 50%;
+        min-width: 288px;
+        height: 35vh;
     }
 }
 
