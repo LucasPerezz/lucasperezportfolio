@@ -100,6 +100,18 @@ const portfolio = [
         ],
         url: "https://lucasperezz.github.io/flowernails/",
         github: "https://github.com/LucasPerezz/flowernails"
+    },
+    {
+        name: "NextGames",
+        image: "https://i.ibb.co/xC47CPj/Opera-Captura-de-pantalla-2022-07-08-184443-127-0-0-1.png",
+        language: [
+            "Html",
+            "Css",
+            "JavaScript",
+            "Firebase"
+        ],
+        url: "https://lucasperezz.github.io/nextgames/public/",
+        github: "https://github.com/LucasPerezz/nextgames"
     }
 ];
 
